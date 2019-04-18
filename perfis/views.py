@@ -4,3 +4,7 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 'index.html')
+
+
+def exibir(request):
+    return render(request, 'perfil.html')
