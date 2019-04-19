@@ -19,5 +19,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('perfil/', views.exibir, name="perfil")
+    path('<int:perfil_id>/', views.exibir, name="perfil")
 ]
